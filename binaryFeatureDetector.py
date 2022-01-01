@@ -1,3 +1,10 @@
+# ===============================
+# binaryFeatureDetector - Model
+# ===============================
+# Sub dividing a larger convolution matrix into several independent binary detection arms 
+# allows us to train a single model to predict several binary classifications in parallel
+#################################
+
 class binaryFeatureDetector(keras.Model):
 
   def __init__(self):

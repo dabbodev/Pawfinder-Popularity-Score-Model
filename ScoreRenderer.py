@@ -1,3 +1,11 @@
+# ===============================
+# ScoreRenderer - Layer
+# ===============================
+# By reading interpreting the binary feature matrix from the previous model, 
+# we divide the features into positive and negative components, and use the
+# 3 score encoding layers to determine a starting point to derive the final score
+#################################
+
 class ScoreRenderer(Layer):
     def __init__(self):
         super(ScoreRenderer, self).__init__()
